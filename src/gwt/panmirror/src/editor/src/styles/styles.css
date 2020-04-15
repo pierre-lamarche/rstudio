@@ -13,8 +13,12 @@
  *
  */
 
+.pm-editing-root-node {
+  padding: 0 10px;
+}
+
 .pm-content {
-  padding: 0 8px;
+  position: relative;
 }
 
 .pm-content p {
@@ -145,6 +149,7 @@
 .pm-image-preview {
   border: 1px dotted;
   padding: 15px;
+  margin-block-end: 1em;
 }
 
 .pm-show-text-focus.pm-text-focused {

@@ -6,7 +6,15 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
-Try out with Mastering Shiny
+Merge into panmirror-next 
+
+Support for bookdown @ref (seems to round-trip okay but provide mark / input rule?)
+ Would need a rule that runs on startup and an input rule
+
+Take a look at constructs encountered in blogdown (e.g. {{ foo }}) to see how well
+we work with them.
+
+Round-trip tests in Mastering Shiny
 
 More complete docs
 
@@ -18,6 +26,7 @@ escaping of $ in math as this mode will clearly not be "source mode" style latex
 Button ellipses shouldn't require positioning override
 (see EditorPane.module.scss)
 
+
 Slack style handling of marks?
 
 Reveal codes / typora behavior
@@ -25,6 +34,9 @@ Reveal codes / typora behavior
 Unit testing for core panmirror code
 
 Insert special character UX
+
+Deleting withProgress in TextEditingTargetVisualMode breaks everything! (see inline comment)
+
 
 multimarkdown support is incomplete: -mmd\_title\_block -mmd\_link\_attributes (not written, likely limitation of pandoc) -mmd\_header\_identifiers (work fine, but we currently allow edit of classes + keyvalue for markdown\_mmd)
 

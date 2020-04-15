@@ -1,7 +1,7 @@
 /*
- * RpcRequestCallback.java
+ * div-styles.css
  *
- * Copyright (C) 2009-12 by RStudio, PBC
+ * Copyright (C) 2019-20 by RStudio, PBC
  *
  * Unless you have received this program directly from RStudio pursuant
  * to the terms of a commercial license agreement with RStudio, then
@@ -13,10 +13,9 @@
  *
  */
 
-package org.rstudio.core.client.jsonrpc;
-
-public interface RpcRequestCallback 
-{
-   void onError(RpcRequest request, RpcError error);
-   void onResponseReceived(RpcRequest request, RpcResponse response);
+ 
+.ProseMirror .pm-div {
+  position: relative;
 }
+
+
