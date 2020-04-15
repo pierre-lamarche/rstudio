@@ -17,4 +17,4 @@
 
 set -e
 
-curl -sL https://sentry.io/get-cli/ | bash || true
+curl -sL https://sentry.io/get-cli/ | sed -i 's:#!/bin/sh:#!/bin/bash:' | bash || true
